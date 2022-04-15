@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/myscript.js"></script>
+        
+    <script src="script.js"></script>
+    <script src="ajax.js"></script>
+</head>
+
+<body>
+    <div class="contact-clean">
+        <form method="post" id="myForm">
+            <h2 class="text-center">Inscrivez-vous&nbsp;&nbsp;</h2>
+
+            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="exemple@email.com"
+                    id="email" pattern="[a-zA-Z0-9._-]+@[a-z.-]"></div>
+            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Mot de passe"
+                    id="password">
+                <!--<small class="text-danger invisible" name="message_erreur" id="message_erreur">Veuillez entrer un mot de passe de longueur minimum 8 caractères.</small>-->
+                <small id="message_erreur2"> </small>
+            </div>
+            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Vérification du mot de passe"
+                id="Vpassword">
+            <!--<small class="text-danger invisible" name="message_erreur" id="message_erreur">Veuillez entrer un mot de passe de longueur minimum 8 caractères.</small>-->
+            <small id="message_erreur3"> </small>
+            </div>
+
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="formCheck-1">
+                    <label class="form-check-label" for="formCheck-1" id="i_agree">J'accepte les conditions d'utilisations</label>
+                </div>
+
+
+                <button id="send_butt" class="btn btn-primary" type="button" onclick="verifierFormulaire()">S'inscrire </button>
+
+            </div>
+        </form>
+    </div>
+    
+
+
+</body>
+
+</html>
